@@ -1,0 +1,118 @@
+/*
+Color Palette
+#F7FFF7 - almost white
+#343434 - dark gray - almost black
+#2F3061 - dark blue
+#FFE66D - yellow
+#A1C6D7 - light blue
+*/
+
+
+/* Global Styles
+--------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+img {
+    width: 300px;
+}
+a {
+    color: #FFE66D;
+}
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 100px;
+    line-height: 1;
+    text-shadow: 1px 1px 2px black, 1px 1px 25px rgb(42, 117, 64), 0 0 5px rgb(139, 0, 109);
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+.content-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+/* Profile Styles
+--------------------------*/
+header {
+    background: #03275eea;
+    color: #F7FFF7;
+}
+
+/* Projects Styles
+--------------------------*/
+.projects {
+    background: #d7fdd7;
+    overflow: hidden;
+}
+
+.project-item img {
+    float: left;
+    margin: 0 20px 20px 20px;
+}
+
+.projects a {
+    color: #F7FFF7;
+    background: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Work Experience Styles
+--------------------------*/
+.work-experience {
+    background: #98d4f0;
+    overflow: hidden;
+}
+
+.work-experience img {
+    float: left;
+    margin: 20px;
+}
+
+/* Education Styles
+--------------------------*/
+.education {
+    background: #f39e4e;
+    overflow: hidden;
+}
+
+.education img {
+    float: left;
+    margin: 20px;
+}
+
+/* Contact Info Styles
+--------------------------*/
+footer {
+    background: #555555;
+    color: #F7FFF7;
+}
+
