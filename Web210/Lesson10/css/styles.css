@@ -1,0 +1,156 @@
+/*
+Color Palette
+#13D0D8 - auqa blue
+#13D0D8 - aqua blue 14% (faded)
+#707070 - gray
+#EFEFEF - light gray
+*/
+
+/* Global Styles
+--------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.content-wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header Styles
+--------------------------*/
+
+header {
+    height: 120px;
+    background: #13D0D8;
+    color: #707070;
+}
+
+header .content-wrap {
+    width: 358px;
+}
+
+header .content-wrap h1{
+    margin: 0;
+    font-size: 60px;
+    text-shadow: 1px 1px 2px white;
+}
+
+header .content-wrap h3 {
+    margin: 0;
+    text-align: right;
+}
+
+/* Nav Styles
+--------------------------*/
+
+.nav-container {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+    overflow-wrap: normal;
+    text-align: center;
+    background: #13d1d814;
+}
+
+.nav-container .nav-item {
+    border: solid 1px #707070;
+    border-radius: 1px;
+}
+
+.nav-container .nav-item:hover {
+    text-decoration: underline;
+    box-shadow: 2px 2px 5px 3px #4d4d4d;
+
+}
+.nav-container a {
+    padding: 0 15px;
+    text-decoration: none;
+    color: #707070;
+    
+}
+
+/* Project Styles
+--------------------------*/
+
+.projects-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.projects-container a {
+    text-decoration: none;
+    background: #EFEFEF;
+    color: black;
+    border: solid black 1px;
+    border-radius: 4px;
+    margin: 25px;
+}
+
+.projects-container a:hover {
+    box-shadow: 2px 2px 5px 3px #4d4d4d;
+}
+
+.projects-container h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.project-item img {
+    width: 100%;
+    padding: 0 20px 10px 20px;
+}
+
+.project-item p {
+    margin: 0 10px 10px 10px;
+}
+
+
+
+
+/* Responsive Styles
+--------------------------*/
+
+@media (max-width: 1200px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .projects-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projects-container h3 {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .project-item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
